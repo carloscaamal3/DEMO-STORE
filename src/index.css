@@ -1,0 +1,272 @@
+*{
+  margin: 0;
+  padding:  0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
+.App
+{
+
+max-width: 1550;
+width: 100%;
+min-height: 100vh;
+margin: 0 auto;
+box-shadow: 0 6px 6px black;
+padding:  0 15px;
+ box-sizing: border-box;
+
+
+}
+
+/*header*/
+
+header{
+width: 98%;
+min-height: 100px;
+max-width: 1530px;
+overflow: hidden;
+display: flex;
+justify-content:space-around;
+align-items: center;
+flex-wrap: wrap ;
+position: fixed;
+box-sizing: border-box;
+background-color: white;
+box-shadow: 0px 5px 10px rgb(113, 111, 111)
+
+}
+footer{
+  width: 98%;
+  min-height: 100px;
+  margin-top: -70rem;
+  max-width: 1530px;
+  overflow: hidden;
+  display: flex;
+  justify-content:space-around;
+  align-items: center;
+  flex-wrap: wrap ;
+  position: fixed;
+  box-sizing: border-box;
+  background-color: white;
+  box-shadow: 0px 5px 10px rgb(113, 111, 111)
+  
+  }
+a{
+  color: black;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+a:hover{
+  color: #60aeff;
+}
+li{
+  list-style: none;
+}
+header ul{
+  display: contents;
+  padding: 0px;
+  margin: 0px;
+
+}
+header ul li{
+  padding: 0 1rem ;
+}
+header ul li a
+{
+  font-weight: bold;
+}
+header .cart {
+position: relative;
+cursor: pointer;
+
+}
+header .cart box-icon{
+  width: 35px;
+  height: 45px;
+  
+}
+header .cart span{
+  position: absolute;
+  top: -1.2rem;
+  right: -1.4em;
+  width: 2.5rem;
+  height: 2.5rem;
+  border: 1px solid #60aeff;
+  border-radius:50% ;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  padding: 0rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+  background-color: #60aeff;
+
+
+
+}
+
+/*-------PRODUCTOS*/
+
+.title
+{
+  font-size: 2.5rem;
+  padding: 10rem 0 0 0;
+  color: #000000;
+}
+.productos
+{
+  padding:  5rem 2rem;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
+  gap: 3rem 1rem;
+  box-sizing: border-box;
+}
+
+.producto{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 1px 5px 2px 1px rgb(0, 0, 0, .2);
+  border: 6px solid transparent;
+  border-radius: 5px;
+}
+
+.producto:hover{
+  border: 6px solid #60adff91;
+}
+
+.producto_img img
+{
+  width:210px ;
+}
+.producto_footer h1
+{
+  font-weight: 600;
+  font-size: 1.5rem;
+color:black;
+font-family:Arial, Helvetica, sans-serif
+}
+
+.producto_footer p{
+  font-weight: 700;
+  font-size: 1.5rem;
+color:rgb(195, 26, 26);
+text-transform: uppercase;
+font-size: 18px;
+font-family:Arial, Helvetica, sans-serif
+}
+
+.producto_footer .price
+{
+font-size: 2rem;
+color:rgb(26, 26, 38);
+text-transform: uppercase;
+
+}
+.producto .button{
+  width: 100%;
+  height: 45px;
+  display: grid;
+  grid-template-columns:  2fr 1fr;
+  gap: 1rem  2rem;
+  margin: 0.5rem;
+}
+
+.button btn{
+border:none;
+outline: 0;
+cursor: pointer;
+border-radius: 5px;
+}
+.button button{
+  background-color:#60aeff;
+	border-radius:7px;
+	border:1px solid #60aeff;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:19px;
+	padding:10px 25px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #2f6627;
+}
+.button button:hover{
+  background-color:#60adff88;
+  color: #000000;
+
+}
+.btn{
+  background-color: brown;
+	border-radius:7px;
+	border:1px solid brown;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:19px;
+	padding:10px 25px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #2f6627;
+}
+.btn:hover{
+  background-color: brown;
+	border-radius:7px;
+	border:1px solid brown;
+	display:inline-block;
+	cursor:pointer;
+	color:#000000;
+	font-family:Arial;
+	font-size:19px;
+	padding:10px 25px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #2f6627;
+}
+
+
+.button div{
+  background-color: #78ff60;
+  display: grid;
+  align-items: center;
+  margin-left: -2rem;
+  text-align: center;
+  border-radius: 5px ;
+}
+
+.button div a{
+  color: white;
+  font-weight: 700;
+}
+.button div a:hover{
+  color: rgb(9, 6, 6);
+
+}
+
+.logo
+{
+  margin-left: -10rem;
+}
+
+
+/*----------Query----------*/
+
+@media only screen and (max-width: 600px)
+{
+  heaer ul {
+
+    display: none;
+
+  }
+}
